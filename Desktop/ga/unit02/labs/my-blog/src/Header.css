@@ -1,0 +1,13 @@
+
+.header {
+    background-color: rgb(14, 150, 235);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
