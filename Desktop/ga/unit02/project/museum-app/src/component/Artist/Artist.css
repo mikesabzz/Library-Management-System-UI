@@ -1,0 +1,15 @@
+.artist-names {
+    font-weight: bold;
+}
+
+p {
+  font-family: 'Schoolbell', cursive;
+  color: #171d54;
+  text-shadow: 0 0 3px rgb(4, 252, 66);
+}
+
+@media only screen and (max-width: 600px) {
+    .artist-names {
+      padding: 0 30px;
+    }
+  }
