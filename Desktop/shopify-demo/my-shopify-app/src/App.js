@@ -8,8 +8,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 function App() {
   return (
     <AppProvider
-      apiKey="d79fc0a01be6a17e5c8d897530837a75"
-      shopOrigin="https://frontend-applications.myshopify.com/"
+      apiKey=""
+      shopOrigin=""
       forceRedirect={true}
     >
       <BrowserRouter>
