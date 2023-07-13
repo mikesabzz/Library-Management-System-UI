@@ -1,1 +1,16 @@
-<p>home works!</p>
+<div>
+  <input type="text" [(ngModel)]="searchQuery" placeholder="Search by title" />
+  <button (click)="searchBooks(searchQuery)">Search</button>
+</div>
+
+<div class="library-catalog">
+    <div class="book-card" *ngFor="let item of filteredData; let i = index">
+      <div class="book-image">
+        <img [src]="generateImageUrl(i)" alt="Book Image" />
+      </div>
+      <h2 class="book-title">{{item.title}}</h2>
+      <p class="book-author">{{item.author}}</p>
+      <p class="book-description">{{ item.description }}</p>
+      <button class="check-availability-button">Check Availability</button>
+    </div>
+</div>

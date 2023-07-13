@@ -7,11 +7,37 @@ import { ApiService } from '../api.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  products = null;
-	constructor(private apiService: ApiService) { }
-	ngOnInit() {
-		this.apiService.get().subscribe((data)=>{  
-			console.log(data);  
-		})  
+	data: any;
+	filteredData: any;
+	searchQuery: string = '';
+
+	constructor(private apiService: ApiService) {}
+
+	ngOnInit(): void {
+		this.apiService.get().subscribe(
+			(data) => {
+				this.data = data;
+				this.filteredData = this.data;
+			},
+			(error) => {
+				console.error(error);
+			}
+		);
 	}
+
+	searchBooks(searchQuery: string): void {
+		if (searchQuery.trim() === '') {
+		  this.filteredData = this.data;
+		} 
+		else {
+			for (let key in this.filteredData) {
+				let item = this.filteredData[key];
+				this.filteredData = item.title.toLowerCase().includes(searchQuery.toLowerCase())
+			  }
+		}
+	  }
+	generateImageUrl(itemId: number): string {
+		itemId++;
+		return `https://picsum.photos/seed/${itemId}/300/400`;
+	  }
 }

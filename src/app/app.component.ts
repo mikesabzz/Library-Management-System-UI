@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Libray-Management-System-UI';
+  title = 'Library Management System';
 }
