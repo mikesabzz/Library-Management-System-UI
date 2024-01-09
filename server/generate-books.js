@@ -4,12 +4,14 @@ const fs = require('fs');
 const books = [];
 
 // Generate random books
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 30; i++) {
   const book = {
+    id: i+1,
     title: faker.lorem.words(),
     author: faker.name.findName(),
     image: faker.image.imageUrl(),
-    description: faker.lorem.paragraph()
+    description: faker.lorem.paragraph(),
+    userId: null,
   };
 
   books.push(book);

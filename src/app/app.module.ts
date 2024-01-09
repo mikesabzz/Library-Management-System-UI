@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SearchComponent } from './search/search.component';
 // import { MatToolbarModule,
 //   MatIconModule,
 //   MatCardModule,
@@ -17,7 +16,6 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchComponent
   ],
   imports: [
     BrowserModule,
