@@ -1,3 +1,38 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 200px; 
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
+
 .library-catalog {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -75,6 +110,11 @@
 
 .check-availability-button:hover {
   background-color: #0056b3;
+}
+.reserve-button {
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 /* Mobile responsiveness */

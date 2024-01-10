@@ -1,7 +1,7 @@
-<div>
-  <input type="text" [(ngModel)]="searchQuery" placeholder="Search by title" />
-  <button (click)="searchBooks(searchQuery)">Search</button>
-  <button (click)="reload()">Refresh</button>
+<div class="search-container">
+  <input class="search-input" type="text" [(ngModel)]="searchQuery" placeholder="Search by title" />
+  <button class="search-button" (click)="searchBooks(searchQuery)">Search</button>
+  <button class="search-button" (click)="reload()">Refresh</button>
 </div>
 
 <div class="library-catalog">
@@ -14,6 +14,6 @@
       <p class="book-description">{{ item.description }}</p>
       <button class="check-availability-button" (click)="checkAvailability(item.userId, i)">Check Availability</button>
       <p>{{item.availability}}</p>
-      <button *ngIf="reserveButton[i]" (click)="reservePopUp(i)">Reserve</button>
+      <button class="reserve-button"  *ngIf="reserveButton[i]" (click)="reservePopUp(i)">Reserve</button>
     </div>
 </div>
