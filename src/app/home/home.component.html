@@ -14,5 +14,6 @@
       <p class="book-description">{{ item.description }}</p>
       <button class="check-availability-button" (click)="checkAvailability(item.userId, i)">Check Availability</button>
       <p>{{item.availability}}</p>
+      <button *ngIf="reserveButton[i]" (click)="reservePopUp(i)">Reserve</button>
     </div>
 </div>
