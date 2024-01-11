@@ -25,7 +25,6 @@ export class UserDialogComponent {
     this.userService.addUser(newUser).subscribe((addedUser: User) => {
       newUser.id = addedUser.id;
       this.dialogRef.close(newUser);
-      console.log(newUser);
     });
 
     // this.isLibraryCardNumberTaken(this.libraryCardNumber).subscribe(taken => {

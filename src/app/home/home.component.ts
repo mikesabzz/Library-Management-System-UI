@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit {
 			(data) => {
 	  		this.data = data.books;
 	  		this.filteredData = this.data.map((book: any) => ({ ...book, availability: '' }));
-	  		console.log(this.filteredData);
 		},
 		(error) => {
 	  		console.error(error);
@@ -75,9 +74,7 @@ export class HomeComponent implements OnInit {
 		  });
 		
 		  dialogRef.afterClosed().subscribe((result: User)=> {
-			console.log(index);
 			if (result) {
-				console.log(result);
 				this.userService.addUser(result).subscribe((addedUser: User) => {
 				  this.filteredData[index].availability = `It's taken by ${addedUser.firstName} ${addedUser.lastName}`;
 				  this.reserveButton[index] = false;
