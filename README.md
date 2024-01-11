@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Check out the demo
+[Library Management System](https://library-management-demo.vercel.app/home)
+
+<img src="https://github.com/mikesabzz/Library-Management-System-UI/assets/35669040/51fc2d71-fc82-4a72-bcfa-5497f8efc991" width="500">
+
+
