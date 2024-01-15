@@ -31,6 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <img src="https://github.com/mikesabzz/Library-Management-System-UI/assets/35669040/51fc2d71-fc82-4a72-bcfa-5497f8efc991" width="500">
 
-This is the frontend code, with mock data. The backend code is under maintenance and will entain published books and users.
+This is the frontend code, with mock data. The backend code is under maintenance and will entail published books and users.
 
 
