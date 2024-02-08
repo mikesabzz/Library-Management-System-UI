@@ -1,15 +1,17 @@
 .search-container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  /* width: 100%;  */
 }
 
-.search-input {
-  padding: 10px;
-  font-size: 16px;
-  margin-right: 10px;
-  width: 200px; 
-}
+/* .search-input { */
+  /* padding: 10px; */
+  /* font-size: 16px; */
+  /* margin-right: 10px; */
+  /* width: calc(100% - 120px); */
+/* } */
 
 .search-button {
   padding: 10px 20px;
@@ -20,7 +22,7 @@
 @media only screen and (max-width: 767px) {
   .search-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .search-input {
@@ -44,6 +46,12 @@
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.book-details {
+  flex: 1;
 }
 
 .book-image {
@@ -93,10 +101,8 @@
   text-decoration: underline;
 }
 
-.check-availability-button {
-  display: inline-block;
+/* .check-availability-button {
   padding: 10px 20px;
-  background-color: #007bff;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -106,10 +112,10 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.check-availability-button:hover {
-  background-color: #0056b3;
+  margin-top: 10px;
+} */
+.availability-container {
+  margin-top: 10px;
 }
 .reserve-button {
   padding: 5px 15px;

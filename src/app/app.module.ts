@@ -10,11 +10,7 @@ import { UserDialogComponent } from './user-dialog/user-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-// import { MatToolbarModule,
-//   MatIconModule,
-//   MatCardModule,
-//   MatButtonModule,
-//   MatProgressSpinnerModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -31,11 +27,7 @@ import { MatInputModule } from '@angular/material/input';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    // MatToolbarModule,
-    // MatIconModule,
-    // MatButtonModule,
-    // MatCardModule,
-    // MatProgressSpinnerModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
