@@ -2,16 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-bottom: 20px; */
-  /* width: 100%;  */
 }
-
-/* .search-input { */
-  /* padding: 10px; */
-  /* font-size: 16px; */
-  /* margin-right: 10px; */
-  /* width: calc(100% - 120px); */
-/* } */
 
 .search-button {
   padding: 10px 20px;
@@ -101,19 +92,6 @@
   text-decoration: underline;
 }
 
-/* .check-availability-button {
-  padding: 10px 20px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-} */
 .availability-container {
   margin-top: 10px;
 }
