@@ -29,8 +29,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Check out the demo
 [Library Management System](https://library-management-demo.vercel.app/home)
 
-<img src="https://github.com/mikesabzz/Library-Management-System-UI/assets/35669040/51fc2d71-fc82-4a72-bcfa-5497f8efc991" width="500">
+<img src="https://github.com/mikesabzz/Library-Management-System-UI/assets/35669040/55086ad3-857d-4420-af14-70699c871a32" width="500">
 
-This is the frontend code, with mock data. The backend code is under maintenance and will entail published books and users.
+This is the frontend code, that uses the Google Books API. The backend code is under maintenance and will entail published books and users.
 
 
+L
