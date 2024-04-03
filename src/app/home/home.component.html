@@ -20,12 +20,12 @@
     *ngFor="let item of filteredData; let i = index; trackBy: trackByIndex"
   >
     <div class="book-image">
-      <img [src]="generateImageUrl(i)" alt="Book Image" />
+      <img [src]="item.image" alt="Book Image" />
     </div>
     <div class="book-details">
       <h2 class="book-title">{{ item.title }}</h2>
       <p class="book-author">{{ item.author }}</p>
-      <p class="book-description">{{ item.description }}</p>
+      <button mat-button color="primary" class="book-description" (click)="openDescriptionDialog(item.description)">View Description</button>
     </div>
     <div class="availability-container">
       <p>{{ item.availability }}</p>

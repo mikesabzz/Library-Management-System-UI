@@ -11,12 +11,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { DescriptionDialogComponent } from './description-dialog/description-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserDialogComponent,
+    DescriptionDialogComponent,
   ],
   imports: [
     BrowserModule,
